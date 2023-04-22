@@ -1,0 +1,332 @@
+
+/* @import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@100;400;500&display=swap') */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(assets/polices/Montserrat-VariableFont_wght.ttf);
+}
+
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    list-style: none;
+  }
+
+  button{
+    background: none;
+    outline: none;
+    border: 1px solid whitesmoke;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: 0.4s ease;
+    cursor: pointer;
+  }
+
+ 
+
+ button:hover{
+  color: black;
+  background: whitesmoke;
+ }
+
+ a{
+  text-decoration: none;
+}
+
+  body{
+  margin: 0 auto;
+  text-align: center;
+  
+}   
+  nav{
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 5px ;
+  }
+
+  nav li{
+    text-transform: uppercase;
+    font-weight: 600 ;
+    font-size: 0.9rem;
+    cursor: pointer;
+    position: relative;
+    transition: 0.3s ease;
+    padding: 20px 0;
+  }
+    
+  nav li:first-child{
+    color: rgb(95,4,170);
+  }
+
+  nav li:first-child:before{
+    content: "";
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    background: rgb(95,4,170);
+    transform: translateY(-20px);
+  }
+
+    nav li:hover:before{
+      content: "";
+      width: 100%;
+      height: 5px;
+      position: absolute;
+      background: rgb(95,4,170);
+      transform: translateY(-20px);
+    }
+
+    nav li:last-child:before{
+      background: none;
+    }
+
+    #language{
+      background: rgba(128,128,128, 0.25);
+      border-radius: 50px;
+      padding: 8px 16px;
+    }
+
+    .main-header{
+      background: url(./assets/img/bg.jpg) fixed center/cover;
+      color: white;
+      padding: 60px;
+    }
+
+    h1{
+      text-transform: uppercase;
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin: 30px 0 35px;
+    }
+
+    .main-header button{
+      padding: 15px 30px;
+      letter-spacing: 2px;
+    }
+
+    .main-header i{
+      transform: translateX(5px);
+    }
+
+    .header-text{
+      padding:45px ;
+      max-width: 1100px;
+      font-size: 1.2rem;
+      line-height: 34px;
+      margin: 0 auto;
+
+    }
+
+    .icon-part{
+      background: rgb(15, 15, 15);
+      padding: 65px 0;
+      color: whitesmoke;
+    }
+
+    .icon-part-container{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      min-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .lip-logo{
+      margin-bottom: 30px;
+    }
+    .icon-part h3 {
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+
+    .icon-part p{
+      width: 80%;
+      margin: 10px auto 20px ;
+    }
+
+    .icon-part button{
+      padding: 9px 32px;
+    }
+    
+/* 
+  
+
+  .main-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  #logo{
+    margin-bottom: 15px;
+  }
+
+  .main-header h1{
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+  }
+
+  .main-header button{
+  text-transform: uppercase;
+  color: white;
+  background: rgba(0, 0, 0, 0);
+  border: 1px solid white;
+  padding:10px;
+  width: 27%;
+  }
+
+  .header-text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  }
+
+  .header-text p{
+  width: 70%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 13px;
+  }
+
+  .icon-part{
+  background: rgb(18, 18, 18);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  }
+
+  .icon-part-container{
+  color:white ;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .icon-part-container h3{
+  text-transform: uppercase;
+  text-align: center;
+  }
+
+  .icon-part-container p{
+  text-align: center;
+  }
+
+  .icon-part-container button{
+  background: rgba(0, 0, 0, 0);
+  color: white;
+  font-weight: bold;
+  border: 1px solid white;
+  padding: 5px;
+  width: 50%;
+  height: 10%;
+  text-transform: uppercase;
+  }
+
+  .list-icon-part{
+  display: flex;
+  flex-direction:column ;
+  justify-content: space-around;
+  align-items: center;
+  height: 80%;
+  padding: 15px;
+  }
+  .news-part{
+    background: rgb(239, 237, 237);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    
+
+  }
+
+  .header-news{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    justify-content:space-between;
+    align-items:left;
+    width: 100%;
+    
+    height: 100px;
+  }
+
+  .left-part{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+  }
+
+  .left-part h2 {
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+  }
+
+  .left-part p{
+    font-weight: 800;
+    font-size: 0.8rem;
+  }
+
+  .right-part{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .right-part button{
+    text-transform: uppercase;
+    width: 50%;
+    height: 40%;
+    font-weight: bold;
+    font-size: 0.8rem;
+    align-items: flex-start;
+    
+  }
+
+  .main-news{
+    display: flex;
+    justify-content: center;
+  
+    
+  }
+
+  .main-news-container{
+    display: grid;
+    grid-template-columns: 33% 33% 34% ;
+    max-width: 1100px;
+    margin: 45px auto;
+  
+  }
+  
+  .mn-pic img{
+    height:200px;
+    align-items: center;
+  }  */
+
+ 
+
