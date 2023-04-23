@@ -406,6 +406,14 @@
       
 
   @media screen and (max-width:704px) {
+    
+    h1{
+      
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin: 30px 0 35px;
+    }
+    
     nav li {
       display: none;
     }
